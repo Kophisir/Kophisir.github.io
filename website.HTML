@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Photo Gallery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>My Photo Gallery</h1>
+    <div class="gallery">
+      <img src="com.png" alt="com">
+    <form action="#" method="post" enctype="multipart/form-data">
+      <input type="file" name="photo" accept="image/*">
+      <input type="submit" value="Upload">
+    </form>
+    <div class="audio">
+      <audio id="audio" src="mao.mp3" controls></audio>
+      <button id="like-button" onclick="like()">Like ❤</button>
+    </div>
+    <div id="hearts-container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

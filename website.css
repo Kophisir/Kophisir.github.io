@@ -1,0 +1,72 @@
+h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 0 auto;
+}
+
+.audio {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#like-button {
+  margin-top: 10px;
+  font-size: 1.2em;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#like-button:hover {
+  background-color: lightgray;
+}
+
+.heart {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("heart.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-name: heart-fall;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes heart-fall {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 500px);
+    opacity: 0;
+  }
+}
